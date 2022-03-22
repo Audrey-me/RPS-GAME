@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* > says h1 in header */
+header{
+    background-color: white;
+}
+header > h1{
+    text-align:center;
+    letter-spacing: 5px;
+    padding: 20px;
+    color:rgb(25,17,11)  ;
+}
+body{
+    background-color: rgb(247,158,27);
+}
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    margin: 30px auto;
+    height: 12vh;
+    width: 35vh;
+    position: relative;
+}
+.badge{
+    background-color: rgb(235,0,27);
+    color: white;
+    width: 68px;
+    text-align: center;
+    
+}
+.user1{
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    /* width: auto; */
+}
+.computer{
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+span{
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .display_result{
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    
+
+    .submit_btn{
+        height: 30px;
+        width: 150px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgb(235,0,27);
+       -webkit-animation: glow linear 1s infinite;
+        animation: glow linear 1s infinite;
+        outline: none;
+
+    }
+    @keyframes glow{
+        0%  {background-color:  rgb(247,158,27);}
+        50% {background-color:  rgb(235,0,27);}
+        100% {background-color:rgb(235,0,27);}
+    }
+    
+.display_result>p{
+     
+     font-size: 25px;
+     color: white;
+     padding: 30px;
+     font-weight: bold;
+     letter-spacing: 4px;
+     /* display: none; */
+}
+
+.inputField{
+    display: none;
+    text-align: center;
+    margin-top:-20px ;
+    
+}
+.input{
+height: 25px;
+text-align: center;
+}
+.input::placeholder{
+    text-align: center;
+}
+.submit-btn{
+width: 50px;
+height: 25px;
+margin-left: -5px;
+}
+
+
+/* .inputField>.submit_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images>div{
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 20px;
+    padding: 13px;
+    cursor: pointer;
+    transition: all 2s ease;
+    }
+    
+    .images>div:hover{
+     border-color: rgb(235,0,27);
+    }
+
+
+/* //COLORS TO BE USED
+//red RGB:rgb (235,0,27)
+//orange RGB: (247,158,27)
+//black RGB: (25,17,11) */
