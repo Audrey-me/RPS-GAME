@@ -40,12 +40,12 @@ function computerData(){
   const computerChoice =  computerData();
   switch(userchoice + computerChoice){
     case "pr" :
-    case "ps" :
-    case "rp" :
-    win(userchoice,computerChoice);
-    break;
     case "rs" :
     case "sp" :
+    win(userchoice,computerChoice);
+    break;
+    case "rp" :
+    case "ps" :
     case "sr" :
     lose (userchoice, computerChoice);
     break;
